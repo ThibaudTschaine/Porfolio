@@ -1,0 +1,287 @@
+/*Style du titre*/
+h1 {
+	margin-top: 4%;
+	font-family: Arial;
+	text-align: center;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+/*Style de la description du Thème*/
+h2 {
+	margin-top: 2%;
+	font-family: Arial;
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+/*Style du titre de l'article sur la page principal*/
+h3 {
+	margin-top: 2%;
+	font-family: Arial;
+	text-align: center;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+/*Style du texte (resume de l'article)*/
+h4 {
+	margin-top: 2%;
+	font-family: Arial;
+	text-align: left;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*Style de la date*/
+h5 {
+	margin-top: 2%;
+	font-family: Arial;
+	text-align: left;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*Style de la source et de la page precedente*/
+h6 {
+	margin-top: 2%;
+	font-family: Arial;
+	text-align: left;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+
+/*Création d'une div pour le titre*/
+.titre{
+		border-style: solid;
+		border-color: transparent;
+		margin-top: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+		background-color: black;
+		color: white;
+}
+
+/*Création d'une div pour la description du thème*/
+.extheme{
+		border-style: solid;
+		border-color: black;
+		margin-top: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+}
+
+/*Création d'une div pour l'article 1*/
+.article1{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 2*/
+.article2{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 3*/
+.article3{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 4*/
+.article4{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 5*/
+.article5{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 6*/
+.article6{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 7*/
+.article7{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 8*/
+.article8{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 9*/
+.article9{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 10*/
+.article10{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 11*/
+.article11{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 12*/
+.article12{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour l'article 13*/
+.article13{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 85%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour le resume de l'article*/
+.art1e{
+		border-style: solid;
+		border-color: black;
+		margin-top: -20%;
+		margin-left: 40%;
+		margin-right: 2%;
+}
+
+/*Création d'une div pour la date*/
+.date{
+		border-style: solid;
+		border-color: transparent;
+		margin-top: 6%;
+		margin-left: 0%;
+		margin-right: 90%;
+}
+
+/*Création d'une div pour la date*/
+.date2{
+		border-style: solid;
+		border-color: transparent;
+		margin-top: 9%;
+		margin-left: 0%;
+		margin-right: 90%;
+}
+
+/*Création d'une div pour la date*/
+.date3{
+		border-style: solid;
+		border-color: transparent;
+		margin-top: 10%;
+		margin-left: 0%;
+		margin-right: 90%;
+}
+
+/*Création d'une div pour la source*/
+.source{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 0%;
+		margin-right: 90%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour la source pdf*/
+.sourcepdf{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 0%;
+		margin-right: 90%;
+		background-color: grey;
+		color: white;
+}
+
+/*Création d'une div pour revenir a la page précedente*/
+.pp{
+		border-style: solid;
+		border-color: black;
+		margin-top: 2%;
+		margin-left: 0%;
+		margin-right: 90%;
+		background-color: grey;
+		color: white;
+}
+
