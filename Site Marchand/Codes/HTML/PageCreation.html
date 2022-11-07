@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<link rel = "stylesheet" href = "../CSS/PageCreation.css">
+		<script type = "text/javascript" src = "../Javascript/PageCreation.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<div class="transition">
+				 <h1> Création du compte </h1>
+				 <p class="choose-email">Veuillez entrer votre adresse e-mail:</p>
+				 
+				<div class="inputs">
+					<input type="email" placeholder="Email">
+					<input type="password" id="mdp1" placeholder="Mot de passe" >
+					<input type="password" id="mdp2"  placeholder="Ressaisir le mot de passe">
+					Quel est votre genre ? <br/><br/>
+					<b><input type="radio" name="genre" value="Homme"/> Homme 
+					<input type="radio" name="genre" value="Femme"/> Femme 
+					<input type="radio" name="genre" value="Autre"/> Autre </b><br/>
+				</div>
+				
+				<div align="center">
+					<button type="submit" onClick = "verifMDP();"><a href="PageAccueil.html">Créer un compte</onClick></a></button>
+				</div>
+			</div>
+		</form>		
+	</body>
+</html>

@@ -244,7 +244,7 @@ h5{
 	font-weight: bold;
 	padding: 13px 30px;
 	border-radius: 30px;
-	transition: .4s; 
+	transition: .4s;
 }
 .contact-me .button-two:hover{
 	background-color: transparent;
@@ -297,6 +297,13 @@ footer p:nth-child(2){
 .end{
 	position: absolute;
 	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
+
+.end2{
+	position: absolute;
+	color:#FFFFFF;
 	bottom: 35px;
 	font-size: 14px; 
 }

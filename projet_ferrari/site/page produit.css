@@ -1,0 +1,181 @@
+/*mettre un fond dégrader rouge*/
+body {
+	background: linear-gradient(to top, red, 10%,black , black);
+	font-family : arial ;
+}
+/*cadre dégrader rouge pour le menu*/
+.cc {
+	width : 1150px ;
+	height : 50px ;
+	margin : 0 auto ;
+	background : linear-gradient(to bottom, red, 20%, black);
+}
+/*cadre pour les liens*/
+.box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 45px;
+  border-color : rgba(0,0,0,0.0);
+  background-color: rgba(0,0,0,0.0);
+  transition: background-color 1s ;
+  float : left ;
+}
+/*change quand on est sur le cadre*/
+.box:hover {
+  background-color: red;
+  width: 94px;
+  height: 43px;
+  border : 4px solid ;
+  border-color :black ;
+}
+/* pour écrire les liens */
+.rr {
+	width : 100px ;
+	height : 50px ; 
+	background-color : rgba(0,0,0,0.0);
+	float : left ;
+}
+/*permet d'ecrire les liens en rouge, souligné, centre et en gras*/
+p.a {
+	text-decoration: underline;
+	color : black ;
+	font-size : 17px ;
+	text-align : center;
+	margin-top : 10px;
+	font-weight: bold;
+}
+/*cadre pour mettre le logo*/
+.pl{
+	width : 100px ; 
+	height : 50px ;
+	margin : 0 auto ;
+	background-color : rgba(0,0,0,0.0) ;
+	
+}
+/*ecrire en rouge et fantasy le titre */
+p.b {
+	font-family : fantasy ;
+	font-size : 50px ;
+	color : red ;
+}
+/*le cadre pour le titre*/
+.kl {
+	width :500px ;
+	height : 70px ; 
+	background: linear-gradient(to bottom, red, 20%, black);
+}
+/*une image en fond pour ecrire les informations*/
+.pk {
+	width : 1330px ;
+	height : 700px ;
+	background : url(../image/voiture2.jpg) no-repeat ;
+	background-size : cover ;
+	margin : 0 ;
+	padding : 0 ;
+}
+/*cadre transparent pour ecrire*/
+.hj {
+	width : 400px ; 
+	height : 600px ;
+	background-color : rgba(0,0,0,0.8);
+	float : left ;
+	margin-left : 40px ;
+	margin-top : 50px ;
+}
+/*ecrire en blanc sur le cadre transparent*/
+p.ab {
+	font-size : 18px ;
+	color : white ;
+	line-height : 15px ;
+	margin-left : 20px ;
+}
+/*mettre le logo sur une image*/
+.ph{
+	width  : 400px ;
+	height : 200px ;
+	float : right;
+	background : url(../image/logo.jpg) no-repeat ;
+	background-size : cover ;
+	margin : 0 ;
+	padding : 0 ;
+	border-color : rgba(0,0,0,0.0);
+	transition: height, width ;
+}
+/*affiche l'image de logo plus grand */
+.ph:hover {
+	width: 700px;
+	height: 400px;
+	border : 4px solid ;
+	border-color : red ;
+}
+/* cadre pour mettre plusieurs images*/
+.gg {
+	width : 1200px ;
+	height : 1000px;
+	margin : auto ;
+
+}
+/*une image  a gauche*/
+.ac {
+	width : 400px ; 
+	height : 225px ;
+	margin-left : 200px ;
+	float : left ;
+}
+/*une image a droite*/
+.av {
+	width : 400px ; 
+	height : 225px ;
+	margin-right : 200px ;
+	float : right ;
+}
+/*une image a gauche*/
+ar {
+	width : 1200px ; 
+	height : 225px ;
+	float : left;
+}
+/*un cadre degrader pour ecrire des informations */
+.dd {
+
+	width : 400px ;
+	height : 350px ;
+	background : linear-gradient(to top, red, 10%,black , black);
+	transition:background 2s ;
+	float : left ;
+	margin-left : 150px ;
+}
+/*met une image en fond*/
+.dd:hover {
+	background : url(../image/volant.jpg) no-repeat ;
+	background-size : cover ;
+	margin : 0 ;
+	padding : 0 ;
+	margin-left : 150px ;
+}
+p.h{
+	color : white ; 
+	font-size : 18px ;
+	margin-left : 20px ;
+	line-height : 30px ;
+}
+/*un cadre degrader pour ecrire des informations */
+.ll {
+
+	width : 400px ;
+	height : 350px ;
+	background : linear-gradient(to top, red, 10%,black , black);
+	transition:background 2s ;
+	float : right ;
+	margin-right : 150px ;
+}
+/*met une image en fond*/
+.ll:hover {
+	background : url(../image/moteur.jpg) no-repeat ;
+	background-size : cover ;
+	margin : 0 ;
+	padding : 0 ;
+	margin-right : 150px 
+}

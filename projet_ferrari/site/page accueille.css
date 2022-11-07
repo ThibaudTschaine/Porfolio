@@ -1,0 +1,165 @@
+/*permet de mettre une image en fond*/
+body {
+	font-family : arial ;
+	background : url(../image/voiture.jpg) no-repeat ;
+	background-size : cover ;
+}
+/*un cadre noir pour le menu*/
+.hh {
+	background-color : black ;
+	width : 1350px ;
+	height : 60px ;
+}
+/* pour mettre l'image dans le cadre*/
+.jj {
+	background-color : black ;
+	width : 100px ;
+	height : 60px ;
+	float : left ;
+	margin-left: 550px ;
+}
+/* pour mettre la barre de recherche a droite dans le cadre noir*/
+.kk {
+	background-color :black ;
+	width : 400px ;
+	height : 40px ;
+	float : right ;
+	margin-top : 20px;
+}
+/*permet de mettre un cadre de couleur transparent*/
+.cc {
+	background-color : rgba(255,0,0,0.4);
+	width : 1350px ;
+	height : 50px;
+	margin-top : 30px ;
+}
+/*permet de mettre un cadre au milieu pour ecrire les liens*/
+.mm {
+	width : 700px ;
+	height : 50px ;
+	margin : 0 auto ;
+}
+/*un cadre pour mettre la video a l'interieur avec un animation*/
+.pp {
+	width : 500px ;
+	height : 300px ; 
+	float : left ;
+	margin-left : 30px ;
+	margin-top : 70px;
+	background-color : rgba(0,0,0,0.0);
+	animation-duration : 8s ; 
+	animation-name : lmn ;
+}
+/*permet de bouger le div*/
+@keyframes lmn {
+	from {
+		margin-left : -555px ;
+	
+	}
+	to {
+		margin-left : 30px ;
+		
+	}
+}
+/*un cadre pour mettre la video a l'interieur avec un animation*/
+.pl {
+	width : 500px ;
+	height : 300px ; 
+	float : right ;
+	margin-right : 30px ;
+	margin-top : 70px;
+	background-color : rgba(0,0,0,0.0);
+	animation-duration : 8s ; 
+	animation-name : jop ;
+}
+/*permet de bouger le div*/
+@keyframes jop {
+	from {
+		margin-right : -555px ;
+	
+	}
+	to {
+		margin-right : 30px ;
+		
+	}
+}
+/*creer une transition*/
+.box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 170px;
+  height: 45px;
+  border-color : rgba(0,0,0,0.0);
+  background-color: rgba(0,0,0,0.0);
+  transition: background-color 1s ;
+}
+/*change quand on est sur le cadre*/
+.box:hover {
+  background-color: black;
+  width: 168px;
+  height: 43px;
+  border : 4px solid ;
+  border-color : red ;
+}
+/* pour écrire les liens */
+.rr {
+	width : 175px ;
+	height : 50px ; 
+	background-color : rgba(0,0,0,0.0);
+	float : left ;
+}
+/*permet d'ecrire les liens en rouge, souligné, centre et en gras*/
+p.a {
+	text-decoration: underline;
+	color : red ;
+	font-size : 20px ;
+	text-align : center;
+	margin-top : 10px;
+	font-weight: bold;
+}
+/*un cadre pour mettre la video a l'interieur avec un animation*/
+.pm {
+	width : 500px ;
+	height : 300px ; 
+	float : right ;
+	margin-right : 130px ;
+	margin-top : 20px;
+	background-color : rgba(0,0,0,0.0);
+	animation-duration : 8s ; 
+	animation-name : slidein ;
+}
+/*permet de bouger le div*/
+@keyframes slidein {
+	from {
+		margin-right : -555px ;
+	
+	}
+	to {
+		margin-right : 130px ;
+		
+	}
+}
+/*un cadre pour mettre la video a l'interieur avec un animation*/
+.pc {
+	width : 500px ;
+	height : 300px ; 
+	float : left ;
+	margin-left : 130px ;
+	margin-top : 20px;
+	background-color : rgba(0,0,0,0.0);
+	animation-duration : 8s ; 
+	animation-name : jjkl ;
+}
+/*permet de bouger le div*/
+@keyframes jjkl {
+	from {
+		margin-left : -555px ;
+		
+	}
+	to {
+		margin-left : 130px ;
+		
+	}
+}
+

@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel = "stylesheet" href = "../CSS/PageContact.css">
+		<title>
+			{!False}
+		</title>
+	</head>
+	<body>
+		<form>
+			<div class="transition">
+				<h1> Pour nous contacter : </h1>
+				<table cellspacing="10" cellpadding="10">
+					<tr>
+						<td><p class="prenom">Entre votre Prenom : <input type = "text" id = "prenom"/></td>
+						<td></td>
+						<td><p class="nom">Entrer votre Nom : <input type = "text" id = "nom"/></td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center">Pourquoi voulez-vous nous contacter ? <select name = "raison" id = "raison">
+								<option id = "option1">Problème avec un produit </option>
+								<option id = "option2"> Problème avec le service client </option>
+								<option id = "option3"> Besoins d'informations </option></select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center">Entrez votre message</td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center"><TEXTAREA NAME = "message" id = "message" ROWS="10" COLS = "50" align="center"></TEXTAREA></td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center"><button type="submit"><a href="PageAccueil.html">Envoyer</a></button>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>

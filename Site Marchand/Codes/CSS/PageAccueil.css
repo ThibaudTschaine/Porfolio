@@ -1,0 +1,428 @@
+/* ░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█        CSS DU SITE {!False}    ░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█ */
+/*																										   Nicolas & Thibaud																										  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rowdies:wght@300&display=swap'); /* Importation de Font google */
+html {
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	min-height: 100vh;
+	background-color:#F3F3F3;
+}
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration:none;
+	box-sizing: border-box;
+}
+/* --------------------------------------------------------------------------------------------- Création de la barre de menu à gauche ------------------------------------------------------------------------------------------*/
+	.sidebar{ /* Initialisation de la barre de menu à gauche hors du champs du site */
+		position: fixed;
+		left:-250px;
+		width: 250px;
+		height: 100%;
+		background: #042331;
+		transition: all.5s ease;
+	}
+	.sidebar header{ /* Entête  de la barre de menu */
+		font-size: 22px;
+		color: white;
+		text-align: center;
+		line-height: 70px;
+		background: #063146;
+		user-select: none;
+	}
+	.sidebar ul{
+		display: block;
+		height: 15%;
+		width: 100%;
+		line-height: 65px;
+		font-size: 20px;
+		color: white;
+		padding-left: 20px;
+		box-sizing: border-box;
+		border-top: 1px solid rgba(255,255,255,.1);
+		border-bottom: 1px solid black;
+		transition: .4s;
+	}
+	ul li:hover a{ /* Action réaliser quand la souris passe sur les options */
+		padding-left: 30px;
+		transition: .5s;
+	}
+	.sidebar ul a i{
+		margin-right: 16px;
+	}
+	#check{ /* on met check invisible */
+		display:none;
+	}
+	label #btn,label #cancel{ /* paramètre communs de btn et cancel */
+		position:absolute;
+		cursor: pointer;
+		background: #042331;
+		border-radius:3px:
+		
+	}
+	label #btn{
+		left: 40px;
+		top: 65px;
+		font-size: 35px;
+		color: white;
+		padding: 6px 12px;
+		transition: all.5s;
+	}
+	label #cancel{
+		z-index: 1111;
+		left: -195px;
+		top: 17px;
+		font-size: 30px;
+		color: #0a5275;
+		padding: 4px 9px;
+		transition: all.5s ease;
+	}
+	#check:checked ~ .sidebar{ /* Action réalisé quand on click sur le btn ( apparition de la barre du menu ) */
+		left:0;
+	}
+	#check:checked ~ label #btn{ /* Action réalisé quand on click sur le btn ( le btn se décale et on le rend transparent  ) */
+		left:250px;
+		opacity: 0;
+		pointer-events: none;
+		
+		
+	}
+	#check:checked ~ label #cancel{ /* Action réalisé quand on click sur btn ( cancel viens se situer à l'endroit où était btn) */
+		left: 195px;
+		
+	}
+
+	/* Comme cancel vient se situer à l'endroit où était btn, quand on reclic à cette endroit, ça va décocher checked qui va annuler son action donc faire partir la barre de menu */
+
+
+/* ------------------------------------------------------------------------------------------------ Création de la barre de recherche ----------------------------------------------------------------------------------------*/
+
+	.search-box{ /* Emplacement de la barre de recherche */
+		position:relative;
+		background: #042331;
+		height:40px;
+		border-radius: 0px;
+		margin-bottom:5%;
+	}
+	.search-box:hover > .search-txt{ /* Ce qu'il ce passe quand la souris passe sur le bouton ( apparition de la barre de recherche) */
+		width: 175px;
+		padding: 0 0px;
+	}
+	.search-btn{ /* Paramètre du bouton (couleur etc...) */
+		color: #e84118;
+		width: 1%;
+		height: 100%;
+		border-radius :20%;
+		background: #042331;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.search-txt{ /* Paramètre de la barre de recherche */
+		margin-left:47%;
+		border: none;
+		background: none;
+		outline: none;
+		float: left;
+		padding: 0 20;
+		color: white;
+		font-size: 16px;
+		font-family:'Rowdies', cursive;
+		transition: 0.4s;
+		line-height: 50px;
+		width: 0%;
+		
+	}
+	
+/* -------------------------------------------------------------------------------------------------------- Transition -----------------------------------------------------------------------------------------------------------*/
+	@keyframes transitionIn{
+		from{
+			opacity:0;
+			transform: rotateX(-10deg);
+			
+		}
+		
+		to{
+			opacity:1;
+			transform: rotateX(0);
+			
+		}
+		
+	}
+	.transition{
+		animation: transitionIn 0.75s;
+	}
+
+/* ---------------------------------------------------------------------------------------------- Création de l'animation des tasses -------------------------------------------------------------------------------------------*/
+	.card{ /* Emplacement de la tasse */
+		position:relative;
+		width: 600px;
+		height : 350px;
+		border-radius: 20px;
+		display:flex;
+		align-items:center;
+		border-radius:20px;
+		transition: 0.5s;
+	}
+	.card .circle{ /* Définition du cercle derrière les tasses */
+		position:absolute;
+		top:20%;
+		left:8%;
+		width:100%;
+		height:70%;
+		border-radius:20px;
+		overflow:hidden;
+	}
+
+	.card .circle::before{ /* Définition du cercle avant animation */
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:#042331; /* Couleur du cercle par défaut */
+		clip-path: circle(120px at center);
+		transition: 0.5s;
+	}
+	.card:hover .circle:before{ /* Ce qu'il ce passe quand la souris passe sur l'emplacement de la tasse ( animation du cercle ) */
+		background:#0065c3; /* Changement de la couleur */
+		clip-path: circle(400px at center); /* L'animation */
+		
+	}
+
+	.card img{ /* définition des paramètres de la tasse (l'image) */
+		position:absolute;
+		top: 48%;
+		left:60%;
+		transform: translate(-50%, -50%);
+		height:300px;
+		position-events:none;
+		transition: 0.5s;
+	}
+	.card:hover img{ /* Animation de la tasse quand la souris passe sur card */
+		left: 72%;
+		height: 350px;
+
+	}
+
+	.card .contenu{ /* Emplacement de la description de la tasse */
+		position:relative;
+		width: 50%;
+		padding: 20px 20px 20px 40px;
+		transition: 0.5s;
+		opacity:0;
+		visibility:hidden; /* On la met par défaut invisible */
+	}
+
+	.card:hover .contenu{ /* Quand la souris passe sur card, le text devient visible et se décale vers la gauche */
+		left: 30px;
+		opacity:1;
+		visibility:visible;
+	}
+	.card .contenu h1{ /* On donne des paramètres à h1*/
+		color: #fff;
+		text-transform: uppercase;
+		font-size:2em;
+		line-height:1em;
+		margin-bottom:5px;
+		margin-top:10px;
+	}
+
+	.card .contenu p{ /* On donne des paramètres à p */
+		color: #fff;
+	}
+
+	.card .contenu a{ /* On donne des paramètres au text qui va permettre au client de mettre le produit dans son panier */
+		position;relative;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius:10px;
+		background: #fff;
+		color: #111;
+		margin-top: 30px;
+		display: inline-block;
+		text-decoration:none;
+		font-weight:700;	
+	}
+
+	@media(max-width: 991px){ /* Affichage du site pour les écrans ayant une largeur <= 991 */
+		.card{
+			width:auto;
+			max-width:350px;
+			align-items: flex-start;
+			margin:10px;
+		}
+		.card:hover{
+			height:400px;
+		}
+		.card .contenu{
+			width:100%;
+			left:0;
+			padding:68px;
+		}
+		.card:hover img{
+			top:50%;
+			left:105%;
+			height:150px;
+		}
+	}
+
+	@media(max-width: 420px){ /* Affichage du site pour les écrans ayant une largeur <= 420 */
+		.card .contenu{
+
+			padding:90px;
+		}
+	
+
+
+		
+	}
+/* ---------------------------------------------------------------------------------------------------------- Tableau -----------------------------------------------------------------------------------------------------------*/
+	table{
+		margin:auto;
+		text-align:center;
+
+	}
+
+
+
+	tr.espace_endessous>td {
+	  padding-bottom: 18em;
+
+
+	}
+
+	td{
+		width:10%;
+		height:10%;
+		font-family: 'Rowdies', cursive;
+	}
+	tr{
+		height:50%;
+	}
+	li, a, button{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		color: #ecf0f1;
+	}
+/* --------------------------------------------------------------------------------------------------------- Autres --------------------------------------------------------------------------------------------------------*/
+
+.BarreP{ /* Paramètres de la barre principale situé tout en haut du site */
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 15%;
+	background-color:#042331;
+}
+
+.entête{ /* L'espace entre barre principale situé tout en haut du site et le reste de la page avec comme image de fond deux tasses */
+	justify-content: space-between;
+	align-items:center;
+	padding:0.1% 5%;
+	width:100%;
+	height:60%;
+	background:url("../../Graphique/Fonds/fond.jpg");
+	background-attachment: fixed;
+}
+
+
+.catégories{ /* Emplacement de la div avec les noms des catégories */
+	margin-top:-3%;
+	margin-bottom:0%;
+	background-color:#042331;
+	opacity:0.75;
+
+}
+
+
+.nouveautesImage{
+	background-image:url("../../Graphique/Fonds/nouveautes.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+	font-size:50px;
+}
+
+
+.lmnotesImage{
+	background-image:url("../../Graphique/Fonds/lmnotes.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+	font-size:50px;
+}
+
+.CategorieClassique{
+	background-image:url("../../Graphique/Fonds/fond_categorie1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size:50px;
+	text-align:center;
+	height:120px;
+}
+.CategorieManga{
+	background-image:url("../../Graphique/Fonds/fond_manga.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size:50px;
+	text-align:center;
+	height:120px;
+}
+.CategorieComics{
+	background-image:url("../../Graphique/Fonds/fond_comics.png");
+	background-size: cover;
+	font-size:510px;
+	text-align:center;
+	height:120px;
+}
+.fondBatman{
+	background-image:url("../../Graphique/Fonds/fondbatman.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.fondmha{
+	background-image:url("../../Graphique/Fonds/fondmha1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo{
+	cursor:pointer;
+
+}
+.a{
+	transition: all 0.9s ease 0s; /* Animation quand on met la souris sur un lien cliquable */
+}
+
+.a:hover{ /* changement de la couleur du fond d'un lien cliquable quand on met la souris dessus */
+	color: #063146;
+}
+
+button {
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover{ /* changement de la couleur du fond d'un bouton quand on met la souris dessus */
+	background-color: rgba(0,136,169,0.8);
+}
+
+.BarreFin{
+	background-color:#042331;
+	height:200px;
+}
+
+/* ░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░▒▓█░▒▓█ ░▒▓█▓▒░▒▓█▓▒░▒▓░▒▓█ ░▒▓█▓▒░*/
