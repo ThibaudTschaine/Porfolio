@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Portfolio | Thibaud Tschaine</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Portfolio</h2>
+			<ul>
+				<li><a href="../index.html">Accueil</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<h1>Thibaud <span>Tschaine</span></h1>
+		</div>
+	</div>
+
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2>Mes Projets en Premier Année</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Site Ferrari Statique</h5>
+				<div class="pra">
+					<p>Voici le premier projet que j'ai fait en premier année.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="../projet_ferrari/site/page d_accueille.html">Site Ferrari</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Site Marchand</h5>
+				<div class="pra">
+					<p>Voici le deuxième projet que j'ai fait en premières années.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href = "../Site Marchand/Codes/HTML/PageAccueil.html">Site Marchand</a>
+					</p>
+					<p style="text-align: center;">
+						<a class="button" href = "../Site Marchand/Codes/HTML/PageAccueil.html">Capture BDD</a>
+					</p>
+					<p style="text-align: center;">
+						<a class="button" href = "../Site Marchand/Codes/HTML/PageAccueil.html">Capture Cahier des Charges</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!------footer start--------->
+	<footer>
+		<p class="end2">Contact : thibaudtschaine@gmail.com</p>
+		<br />	
+		<p class="end">CopyRight par Thibaud Tschaine</p>
+	</footer>
+</body>
+</html>
